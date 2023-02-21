@@ -1,11 +1,12 @@
 .crossed {
-    text-decoration: line-through 2px green;
+    text-decoration: line-through 2px rgb(2, 96, 2);
 }
 ul, li {
     list-style-type: none;
     padding: 10px;
     margin: 0;
     color: #f0f0f0;
+    font-size: 20px;
 }
 body {
     background-color: #232322;

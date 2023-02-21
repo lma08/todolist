@@ -1,6 +1,5 @@
 import { Component } from "react";
 import arrow from './arrow.png';
-import check from './check.png';
 
 export class List extends Component{
 
@@ -31,7 +30,6 @@ export class List extends Component{
     crossedWords(event) {
         const li = event.target;
         li.classList.toggle('crossed');
-        this.setState({Image: check});
     }
 
     deleteItems() {
@@ -53,7 +51,7 @@ export class List extends Component{
                     placeholder="Let's do this!" 
                     onChange = {(e) => {this.inputChange(e.target.value)}}
                     value = {this.state.inputText}/>
-                    <button onClick={() => this.addItem(this.state.inputText)} className='btn_add btn'> One more </button>
+                    <button onClick={() => this.addItem(this.state.inputText)} className='btn_add btn'> Add </button>
                 </div>
                 <div className="container">
                     <ul>
